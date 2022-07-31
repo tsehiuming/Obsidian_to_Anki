@@ -311,6 +311,7 @@ export class RegexNote {
 	        }
 		}
 		template["tags"].push(...this.tags)
+        template["tags"] = template["tags"].map(tag => tag.replace("#",""))
         template["deckName"] = deck
 		return {note: template, identifier: this.identifier}
 	}

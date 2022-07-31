@@ -157,7 +157,7 @@ export default class MyPlugin extends Plugin {
 
 	async scanVault() {
 		new Notice('Scanning vault, check console for details...');
-		console.info("Checking connection to Anki...")
+		console.info("Checking connection to Anki...1.04")
 		try {
 			await AnkiConnect.invoke('modelNames')
 		}
